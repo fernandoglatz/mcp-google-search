@@ -263,7 +263,7 @@ class SearchServer {
   async run() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.log('Search MCP server running on stdio');
+    // Server is now running - do not log to stdout as it interferes with MCP protocol
   }
 }
 
