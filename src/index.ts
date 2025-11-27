@@ -163,7 +163,7 @@ class SearchServer {
           );
         }
 
-        const { query, num = 5 } = request.params.arguments;
+        const { query, num = 10 } = request.params.arguments;
 
         try {
           const response = await this.axiosInstance.get('', {
